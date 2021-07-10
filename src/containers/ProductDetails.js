@@ -17,7 +17,7 @@ export default function ProductDetails() {
     };
 
     useEffect(()=>{
-        if(productId && productId!='') fetchProductDetails();
+        if(productId && productId!=='') fetchProductDetails();
         return()=>{
             dispatch(removeSelectedProducts());
         }
